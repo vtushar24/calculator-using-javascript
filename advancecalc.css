@@ -1,0 +1,72 @@
+.calc{
+    border: 10px solid #ccc; 
+    padding: 10px;
+}
+.container {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.row {
+    display: flex;
+}
+
+input[type="button"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.row input[type="button"][value="+"],
+.row input[type="button"][value="-"],
+.row input[type="button"][value="X"],
+.row input[type="button"][value="/"],
+.row input[type="button"][value="="] {
+    background-color: #ff9500;
+}
+
+.row input[type="button"][value="AC"],
+.row input[type="button"][value="DE"],
+.row input[type="button"][value="%"] {
+    background-color: #d4d4d2;
+
+}
+.row input[type="button"][value="1"],
+.row input[type="button"][value="2"],
+.row input[type="button"][value="3"],
+.row input[type="button"][value="4"],
+.row input[type="button"][value="5"],
+.row input[type="button"][value="6"],
+.row input[type="button"][value="7"],
+.row input[type="button"][value="8"],
+.row input[type="button"][value="9"],
+.row input[type="button"][value="0"],
+.row input[type="button"][value="."]
+{
+    color: white;
+    background-color: #1c1c1c;
+}
+
+body {
+    background-color: #1c1c1c;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
